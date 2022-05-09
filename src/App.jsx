@@ -17,6 +17,10 @@ export const App = () => {
     getUsers();
   }, []);
 
+  useEffect(() => {
+    document.title = "github users";
+  })
+
   return (
     <section className="p-4 flex flex-col space-y-10 bg-gray-200">
       <h1 className="text-center text-xl">Github Users</h1>
